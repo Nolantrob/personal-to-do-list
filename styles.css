@@ -1,0 +1,171 @@
+/* Page styling */
+
+input::-webkit-input-placeholder {
+    color: var(--placeholder-color);
+  }
+  
+  input::-moz-placeholder {
+    color: var(--placeholder-color);
+  }
+  
+  input:-ms-input-placeholder {
+    color: var(--placeholder-color);
+  }
+
+* {
+    font-family: 'Roboto';
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* padding: 0px; */
+    margin: 10px 0px 10px 0px;
+}
+
+body {
+    background-color: rgb(105, 53, 112);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Control Panel */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 700px;
+    border: 3px solid rgb(156, 133, 219);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: inherit;
+}
+
+.control-panel-container {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: inherit;
+}
+
+.css-input-field {
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    border: 5px solid rgb(156, 133, 219);
+    background-color: rgb(75, 75, 75);
+    color: white;
+    font-size: inherit;
+    flex: 1;
+    --placeholder-color: lightgray;
+}
+
+.css-input-field:active {
+    filter: brightness(125%);
+    transition: 0.1s;
+}
+
+.css-input-field:focus {
+    outline: none;
+}
+
+.control-panel-container button {
+    background-color: inherit;
+    color: white;
+    padding: 0px 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: inherit;
+}
+
+.control-panel-container button:hover {
+    filter: brightness(125%);
+    transition: 0.1s;
+}
+
+.control-panel-container button:active {
+    filter: brightness(150%);
+    transition: 0.1s;
+}
+
+/* Todo Items and container */
+
+.todo-List-Container {
+    margin-top: 10px;
+    /* gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: min-content; */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.todo-instance-container {
+    background-color: rgb(75, 75, 75);
+    border: 2px solid rgb(156, 133, 219);
+    padding: 20px;
+    color: white;
+    border-radius: 6px;
+    gap: 5px;
+    word-wrap: break-word;
+    width: 300px;
+}
+
+.todo-instance-text {
+    display: inline;
+}
+
+.complete-status {
+    opacity: 0.5;
+    transition: 0.1s;
+}
+
+.complete-button,
+.delete-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    display: inline;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 0px 0px 1px 0px;
+    border-radius: 20px;
+}
+
+.complete-button:hover,
+.delete-button:hover {
+    filter: brightness(150%);
+    transition: 0.1s;
+}
+
+.complete-button:active,
+.delete-button:active {
+    filter: brightness(200%);
+}
+
+.complete-button {
+    background-color: inherit;
+    color: white;
+}
+
+.button-complete-status {
+    filter: brightness(50%);
+}
+
+.delete-button {
+    background-color: inherit;
+    margin: 0px 10px 5px 5px;
+}
+
